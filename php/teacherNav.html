@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="/comeCode/css/teacherNav.css">
+<div class="navcontainer">
+    <nav class="nav">
+        <div class="nav-upper-options">
+            <div class="nav-option option1" onclick="window.location.href='teacherPanel.php'">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                    class="nav-img" alt="dashboard">
+                <h3> Dashboard</h3>
+            </div>
+
+            <div class="option2 nav-option" onclick="window.location.href='courseList.php'">
+                <img src="/comeCode/img/course.png" class="nav-img" alt="course">
+                <h3> Course</h3>
+            </div>
+
+            <div class="option2 nav-option" onclick="window.location.href='moduleList.php'">
+                <img src="/comeCode/img/module.png" class="nav-img" alt="course">
+                <h3> Module</h3>
+            </div>
+
+
+            <div class="nav-option option3" onclick="window.location.href='taskList.php'">
+                <img src="/comeCode/img/task.png" class="nav-img" alt="Task">
+                <h3> Task</h3>
+            </div>
+
+            <div class="nav-option option4" onclick="window.location.href='leaderboard.php'">
+                <img src="/comeCode/img/leader.png" class="nav-img" alt="leaderboard">
+                <h3> Leaderboard</h3>
+            </div>
+
+            <div class="nav-option option6" onclick="window.location.href='studentList.php'">
+                <img src="/comeCode/img/student.png" class="nav-img" alt="student">
+                <h3> Student</h3>
+            </div>
+
+            <div class="nav-option option5" onclick="window.location.href='teacherProfile.php'">
+                <img src="/comeCode/img/profile.png" class="nav-img" alt="profile">
+                <h3> Profile</h3>
+            </div>
+
+
+
+            <div class="nav-option logout" onclick=logout()>
+                <img src="/comeCode/img/logout.png" class="nav-img" alt="logout">
+                <h3>Logout</h3>
+            </div>
+
+        </div>
+
+        <script>
+            function logout() {
+                if (confirm("Do you sure want to logout ?")) {
+                    window.location.href = "logout.php";
+                }
+            }
+        </script>
+    </nav>
+
+
+</div>
